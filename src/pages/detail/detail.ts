@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { PromotionPage } from '../promotion/promotion';
 
 /**
  * Generated class for the DetailPage page.
@@ -24,6 +25,12 @@ export class DetailPage {
   onClickRun(){
     // alert("Hello World");
     this.spy = "I'm spy 55555";
+  }
+  onClickPop(){
+    this.navCtrl.pop();
+  }
+  onOpenPromotionPage(){
+    this.navCtrl.push(PromotionPage);
   }
 
 }
